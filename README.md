@@ -13,7 +13,6 @@ This project extracts Grok-2's self-knowledge and prompt words through a simple 
 **You must run it on Linux.**
 
 ```bash
-conda create -n grok python=3.10
-conda activate grok
-pip install -r requirements.txt
+chmod +x ./run.sh
+bash ./run.sh
 ```
