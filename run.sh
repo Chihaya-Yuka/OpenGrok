@@ -68,6 +68,7 @@ fi
 # Check for firstrun.lock
 if [ ! -f "dataset/firstrun.lock" ]; then
     echo "First run detected. Starting training..."
+    pip install -r requirements.txt
     $PYTHON_CMD train.py
     if [ $? -ne 0 ]; then
         echo "Error: Training failed"
