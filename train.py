@@ -10,7 +10,7 @@ model_id = 'LLM-Research/Meta-Llama-3-8B-Instruct'
 device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
 
 models_dir = './models'
-dataset_file = './dataset/huanhuan.json'
+dataset_file = './dataset/grok.json'
 model_path = f"{models_dir}/model/{model_id.replace('.', '___')}"
 checkpoint_dir = f"./models/checkpoint/{model_id}"
 lora_dir = f"./models/lora/{model_id}"
